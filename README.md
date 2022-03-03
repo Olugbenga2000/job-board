@@ -1,15 +1,7 @@
-# Basic Sample Hardhat Project
+# Job board
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+The smart contract file is in <code> contracts</code> directory.
+The SC allows job owners to post job which can be reviewed and accepted by the admin.
+Once the job is accepted by the admin, the job owner sends the money for the job to the contract.
+Then a developer can take up the job and start working on it. Once the developer is done with the job,
+he submits the job to the owner. If the owner is satisfied, he approves the job on the smart contract and the developer gets paid.
